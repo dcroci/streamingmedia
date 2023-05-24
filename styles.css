@@ -146,6 +146,7 @@ input,
 select {
   vertical-align: middle;
 }
+/* END OF CSS RESET */
 
 :root {
   --blue-700: #020659;
@@ -168,16 +169,27 @@ body {
 main {
   background-color: white;
 }
+nav {
+  color: white;
+}
 #trending {
   display: flex;
+  position: relative;
+  flex-direction: column;
   color: var(--purple);
+  padding: 2rem 0;
 }
 section > h3 {
   display: block;
+  padding-left: 2rem;
 }
 #smoothJazz {
   background: linear-gradient(90deg, var(--blue-400), black);
   color: white;
+  padding: 1rem 2rem;
+}
+#smoothJazz h2 {
+  margin-bottom: 0.5rem;
 }
 .scroll {
   display: flex;
@@ -196,6 +208,9 @@ section > h3 {
   height: 50px;
   width: 350px;
 }
+.card {
+  height: 220px;
+}
 dl {
   display: flex;
 }
@@ -206,6 +221,41 @@ audio {
   position: absolute;
   bottom: 150px;
   left: 5px;
+}
+.more-btn {
+  position: absolute;
+  width: 9rem;
+  bottom: 0;
+  left: 2rem;
+  background-color: var(--purple);
+  color: white;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.more-btn:hover {
+  background-color: var(--blue-700);
+}
+#playlists {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  color: var(--purple);
+  padding: 2rem 0;
+  background-color: var(--blue-200);
+}
+#playlists section {
+  background-color: var(--blue-300);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+#playlists h3:nth-child(1) {
+  padding: 0 2rem;
+}
+#playlists h3 {
+  padding: 0;
 }
 
 #trending ::-webkit-scrollbar {
