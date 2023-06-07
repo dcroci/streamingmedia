@@ -171,6 +171,8 @@ main {
 }
 nav {
   color: white;
+  display: flex;
+  align-items: center;
 }
 #trending {
   display: flex;
@@ -311,9 +313,11 @@ audio::-webkit-media-controls-enclosure {
 footer {
   background-color: white;
   text-align: center;
+  padding: 1rem;
+  color: var(--purple);
+  font-weight: bold;
 }
 .logo {
-  margin: 0 auto;
   text-decoration: none;
   color: white;
 }
@@ -400,5 +404,25 @@ input:checked ~ label:not(.steps) span:after {
   label span,
   input {
     display: none;
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .mainPlaylists {
+    display: flex;
+  }
+  #playlists .scroll,
+  #curated .scroll {
+    display: flex;
+    flex-direction: column;
+  }
+  #playlists .card,
+  #curated .card {
+    display: flex;
+  }
+  #playlists,
+  #curated {
+    width: 50%;
+    height: 500px;
   }
 }
