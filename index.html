@@ -9,8 +9,12 @@
   </head>
   <body>
     <nav>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <a href="#home" class="logo">MuzakMaker</a>
       <ul>
-        <li><a href="#home">MuzakMaker</a></li>
         <li><a href="#trending">Trending Songs</a></li>
         <li><a href="#playlists">Your Playlists</a></li>
         <li><a href="#curated">Curated Playlists</a></li>
@@ -31,7 +35,7 @@
         </p>
       </section>
       <section id="trending">
-        <h3>TRENDING SONGS</h3>
+        <h3 class="title">TRENDING SONGS</h3>
         <div class="scroll">
           <section>
             <div>
@@ -105,7 +109,7 @@
         <button class="more-btn">More Trending</button>
       </section>
       <section id="playlists">
-        <h3>YOUR PLAYLISTS</h3>
+        <h3 class="title">YOUR PLAYLISTS</h3>
         <div class="scroll">
           <section class="card">
             <img src="assets/img/best-of-2020-cover.png" alt="aloma" />
@@ -135,17 +139,46 @@
         </div>
         <button class="more-btn">All your playlists</button>
       </section>
-      <!-- <section id="playlists">
+      <section id="curated">
+        <h3 class="title">CURATED PLAYLISTS</h3>
         <div class="scroll">
-          <section>
-            <div>
-              <img src="assets/img/best-of-2020-cover.png" alt="best of 2020" />
-              <h3>Best of 2020</h3>
-              <p>The music that got you through the lock down.</p>
-            </div>
+          <section class="card">
+            <img src="assets/img/boozy-brunch-cover.png" alt="aloma" />
+            <h3>Boozy Brunch</h3>
+            <p>Light up the afternoon with these energetic hits.</p>
+          </section>
+          <section class="card">
+            <img src="assets/img/dinner-party-cover.png" alt="aloma" />
+            <h3>Dinner Party</h3>
+            <p>
+              Background music to give your party life, but allow your guests to
+              chat.
+            </p>
+          </section>
+          <section class="card">
+            <img src="assets/img/mellow-cover.png" alt="aloma" />
+            <h3>Mellow</h3>
+            <p>
+              Relax after a stressful day with this collection of extra smooth
+              jazz.
+            </p>
+          </section>
+          <section class="card">
+            <img src="assets/img/jazz-chill-cover.png" alt="aloma" />
+            <h3>Jazz and Chill</h3>
+            <p>Set the mood with these silky sounds.</p>
+          </section>
+          <section class="card">
+            <img src="assets/img/smooth-saxophone-cover.png" alt="aloma" />
+            <h3>Jazz Saxophone</h3>
+            <p>The greatest collection of your sax favorites.</p>
           </section>
         </div>
-      </section> -->
+        <button class="more-btn">More curated</button>
+      </section>
+      <footer>
+        <p>Copyright 2022 Smooth Jazz</p>
+      </footer>
     </main>
   </body>
 </html>
