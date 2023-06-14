@@ -212,6 +212,7 @@ section > h3 {
 }
 .card {
   height: 220px;
+  max-width: 200px;
 }
 dl {
   display: flex;
@@ -257,6 +258,7 @@ audio {
   color: white;
   text-align: center;
   padding: 0.5rem;
+  height: 260px;
 }
 #curated section {
   background-color: var(--blue-500);
@@ -266,6 +268,32 @@ audio {
   padding: 1rem 2rem;
   background-color: white;
 }
+#playlists .scroll h3:nth-child(1) {
+  background-color: var(--blue-300);
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+#curated .scroll h3:nth-child(1) {
+  background-color: var(--blue-500);
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+.scroll .card {
+  max-width: 200px;
+}
+#playlists .scroll .cardInfo {
+  position: initial;
+  background-color: var(--blue-300);
+  width: fit-content;
+}
+#curated .scroll .cardInfo {
+  position: initial;
+  background-color: var(--blue-500);
+  width: fit-content;
+}
+
 #playlists h3,
 #curated h3 {
   padding: 0;
@@ -424,5 +452,14 @@ input:checked ~ label:not(.steps) span:after {
   #curated {
     width: 50%;
     height: 500px;
+  }
+  .scroll .card {
+    max-width: fit-content;
+  }
+  #playlists .scroll,
+  #curated .scroll {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 }
