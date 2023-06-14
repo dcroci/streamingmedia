@@ -165,6 +165,7 @@ html {
 }
 body {
   margin: 0 auto;
+  max-width: 1440px;
 }
 main {
   background-color: white;
@@ -454,12 +455,20 @@ input:checked ~ label:not(.steps) span:after {
     height: 500px;
   }
   .scroll .card {
-    max-width: fit-content;
+    min-width: 100%;
   }
   #playlists .scroll,
   #curated .scroll {
     display: flex;
     overflow-x: hidden;
     overflow-y: auto;
+  }
+  #playlists .scroll .cardInfo,
+  #curated .scroll .cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
   }
 }
