@@ -458,6 +458,11 @@ audio {
   border-radius: 50px;
   text-align: center;
 }
+#trending .scroll div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 @media screen and (min-width: 834px) {
   ul {
