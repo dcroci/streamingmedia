@@ -346,9 +346,12 @@ audio::-webkit-media-controls-enclosure {
 footer {
   background-color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   color: var(--purple);
   font-weight: bold;
+}
+footer p {
+  margin-top: 2rem;
 }
 .logo {
   text-decoration: none;
@@ -424,6 +427,9 @@ label span:after {
 label span:before {
   top: 5px;
 }
+main {
+  height: 100vh;
+}
 label span:after {
   top: -5px;
 }
@@ -447,9 +453,9 @@ input:checked ~ label:not(.steps) span:after {
   top: 0;
 }
 audio {
+  display: block;
   margin: 0 auto;
-  align-items: center;
-  text-align: center;
+  border-radius: 50px;
 }
 
 @media screen and (min-width: 834px) {
@@ -528,7 +534,6 @@ audio {
     cursor: pointer;
   }
   #trending .more-btn {
-    background-color: red;
     left: 83%;
   }
 }
